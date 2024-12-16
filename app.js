@@ -41,6 +41,7 @@ var createNewTaskElement = function (taskString) {
   editButton.className = "edit";
 
   deleteButton.className = "delete";
+
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
@@ -50,6 +51,15 @@ var createNewTaskElement = function (taskString) {
   listItem.appendChild(editInput);
   listItem.appendChild(editButton);
   listItem.appendChild(deleteButton);
+
+    // main
+  editButton.classList.add("global-button");
+  deleteButton.classList.add("global-button");
+  editInput.classList.add("input-text input-text_active");
+  listItem.classList.add("task-row");
+  checkBox.classList.add("list-flag");
+  label.classList.add("list-description list-description_active");
+  deleteButtonImg.classList.add("delete-img");
   return listItem;
 };
 
