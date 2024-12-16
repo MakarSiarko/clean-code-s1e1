@@ -24,6 +24,9 @@
     text-align: center;
   }
 }
+#add-section {
+  margin: 16px 0;
+}
 .inputs-container {
   display: block;
   width: 500px;
