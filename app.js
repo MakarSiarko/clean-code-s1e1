@@ -36,6 +36,7 @@ var createNewTaskElement = function (taskString) {
   checkBox.type = "checkbox";
   editInput.type = "text";
   editInput.className = "task";
+  deleteButtonImg.alt = "remove";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
   editButton.className = "edit";
@@ -55,10 +56,12 @@ var createNewTaskElement = function (taskString) {
     // main
   editButton.classList.add("global-button");
   deleteButton.classList.add("global-button");
-  editInput.classList.add("input-text input-text_active");
+  editInput.classList.add("input-text");
+  editInput.classList.add("input-text_active");
   listItem.classList.add("task-row");
   checkBox.classList.add("list-flag");
-  label.classList.add("list-description list-description_active");
+  label.classList.add("list-description");
+  label.classList.add("list-description_active");
   deleteButtonImg.classList.add("delete-img");
   return listItem;
 };
